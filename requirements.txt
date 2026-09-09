@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+fairlearn
+shap
+streamlit
+plotly
+matplotlib
+python-dotenv
+jupyter
