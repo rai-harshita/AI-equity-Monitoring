@@ -69,3 +69,39 @@ The dataset will be used to evaluate:
 - Demographic attributes may not represent all real-world populations.
 - Small subgroup sizes can produce unstable fairness estimates.
 - The model is for educational demonstration only.
+
+## Initial Data Exploration Findings
+
+The dataset contains 614 records and 13 columns.
+
+The target variable is `Loan_Status`, where:
+
+- Y represents loan approval.
+- N represents loan rejection.
+
+### Subgroup Distribution
+
+Gender:
+
+- Male: 489 records
+- Female: 112 records
+- Missing: 13 records
+
+Education:
+
+- Graduate: 480 records
+- Not Graduate: 134 records
+
+### Missing Data
+
+Missing values were identified in the following attributes:
+
+- Gender: 13
+- Married: 3
+- Dependents: 15
+- Self_Employed: 32
+- LoanAmount: 22
+- Loan_Amount_Term: 14
+- Credit_History: 50
+
+These missing values will be documented as a data quality consideration and will also be used when creating incomplete-case tests for the governance toolkit.
