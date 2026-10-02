@@ -1,0 +1,24 @@
+{
+  "sensitive_attribute": "Education",
+  "metrics": {
+    "Graduate": {
+      "accuracy": 0.8600,
+      "recall": 0.9859,
+      "selection_rate": 0.8300
+    },
+    "Not Graduate": {
+      "accuracy": 0.8696,
+      "recall": 1.0000,
+      "selection_rate": 0.7391
+    }
+  },
+  "fairness_metrics": {
+    "demographic_parity_difference": 0.0909,
+    "equalized_odds_difference": 0.1149
+  },
+  "interpretation": {
+    "demographic_parity_difference": "Measures the difference in positive prediction rates between education groups.",
+    "equalized_odds_difference": "Measures the largest difference in error-related rates between education groups.",
+    "governance_note": "These metrics are evidence for review and should be interpreted together with subgroup size, data quality and application context."
+  }
+}

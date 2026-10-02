@@ -98,7 +98,7 @@
 
 ## 02 October 2026 – Baseline Machine Learning Model
 
-### Work Completed
+### Work Completed – Baseline Model
 
 - Implemented the preprocessing pipeline for the loan dataset.
 - Split the dataset into training and testing sets using stratified sampling.
@@ -142,3 +142,48 @@ The `Gender` and `Education` attributes are retained separately for subsequent s
 - Evaluate fairness across demographic subgroups.
 - Calculate subgroup performance and selection metrics.
 - Identify potential fairness gaps requiring governance review.
+
+## 02 October 2026 – Fairness Evaluation
+
+### Work Completed – Fairness Evaluation
+
+- Implemented fairness evaluation using Fairlearn.
+- Evaluated model behavior across Gender subgroups.
+- Evaluated model behavior across Education subgroups.
+- Calculated subgroup accuracy, recall and selection rate.
+- Calculated demographic parity difference.
+- Calculated equalized odds difference.
+- Stored fairness results as JSON governance evidence.
+
+### Gender Fairness Results
+
+| Group | Accuracy | Recall | Selection Rate |
+| --- | ---: | ---: | ---: |
+| Female | 84.00% | 100.00% | 72.00% |
+| Male | 87.50% | 98.57% | 83.33% |
+
+- Demographic Parity Difference: 0.1133
+- Equalized Odds Difference: 0.0594
+
+### Education Fairness Results
+
+| Group | Accuracy | Recall | Selection Rate |
+| --- | ---: | ---: | ---: |
+| Graduate | 86.00% | 98.59% | 83.00% |
+| Not Graduate | 86.96% | 100.00% | 73.91% |
+
+- Demographic Parity Difference: 0.0909
+- Equalized Odds Difference: 0.1149
+
+### Fairness Governance Considerations
+
+- Fairness metrics are treated as evidence rather than automatic proof of unfairness.
+- Differences in selection rates and error-related metrics require contextual review.
+- Subgroup size and missing demographic information must be considered when interpreting fairness results.
+- Gender and Education were not used as model inputs but were retained for subgroup evaluation.
+
+### Next Steps – Explainability and Governance
+
+- Add an explainability component using SHAP.
+- Identify important model features.
+- Connect explanations with governance evidence.

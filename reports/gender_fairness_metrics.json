@@ -1,0 +1,24 @@
+{
+  "sensitive_attribute": "Gender",
+  "metrics": {
+    "Female": {
+      "accuracy": 0.8400,
+      "recall": 1.0000,
+      "selection_rate": 0.7200
+    },
+    "Male": {
+      "accuracy": 0.8750,
+      "recall": 0.9857,
+      "selection_rate": 0.8333
+    }
+  },
+  "fairness_metrics": {
+    "demographic_parity_difference": 0.1133,
+    "equalized_odds_difference": 0.0594
+  },
+  "interpretation": {
+    "demographic_parity_difference": "Measures the difference in positive prediction rates between groups.",
+    "equalized_odds_difference": "Measures the largest difference in error-related rates between groups.",
+    "governance_note": "These metrics are evidence for review and should be interpreted together with subgroup size, data quality and application context."
+  }
+}
