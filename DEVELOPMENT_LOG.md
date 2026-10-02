@@ -90,8 +90,55 @@
 - Incomplete cases should not be treated as fully evaluated cases.
 - Small subgroup sizes may affect the reliability of fairness metrics.
 
-### Next Steps
+### Next Steps – Baseline Model
 
 - Commit the validation and testing work to GitHub.
 - Prepare the baseline machine learning model.
 - Evaluate baseline model performance before adding fairness and explainability components.
+
+## 02 October 2026 – Baseline Machine Learning Model
+
+### Work Completed
+
+- Implemented the preprocessing pipeline for the loan dataset.
+- Split the dataset into training and testing sets using stratified sampling.
+- Handled missing numerical values using median imputation.
+- Handled missing categorical values using most-frequent imputation.
+- Applied one-hot encoding to categorical features.
+- Applied standard scaling to numerical features.
+- Excluded `Gender` and `Education` from model inputs so they can be retained for later fairness evaluation.
+- Trained a Logistic Regression baseline model.
+- Saved the trained model and preprocessing pipeline.
+- Evaluated baseline model performance.
+
+### Dataset Split
+
+- Total rows: 614
+- Training rows: 491
+- Testing rows: 123
+
+### Baseline Results
+
+- Accuracy: 86.18%
+- Precision: 84.00%
+- Recall: 98.82%
+- F1 Score: 90.81%
+
+### Confusion Matrix
+
+- True Negative: 22
+- False Positive: 16
+- False Negative: 1
+- True Positive: 84
+
+### Governance Significance
+
+The baseline model establishes a performance reference point before fairness, explainability and governance checks are applied.
+
+The `Gender` and `Education` attributes are retained separately for subsequent subgroup fairness analysis.
+
+### Next Steps – Fairness Evaluation
+
+- Evaluate fairness across demographic subgroups.
+- Calculate subgroup performance and selection metrics.
+- Identify potential fairness gaps requiring governance review.
