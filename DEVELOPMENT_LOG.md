@@ -131,7 +131,7 @@
 - False Negative: 1
 - True Positive: 84
 
-### Governance Significance
+### GenAI Safety Governance Significance
 
 The baseline model establishes a performance reference point before fairness, explainability and governance checks are applied.
 
@@ -219,8 +219,48 @@ SHAP provides evidence about which model features have the greatest influence on
 
 Feature importance magnitude does not by itself establish causality or fairness. Explainability results should therefore be interpreted together with performance and subgroup fairness evidence.
 
-### Next Steps
+### Next Steps – Governance Decision Engine
 
 - Add controlled Generative-AI safety testing.
 - Define prompt-risk categories and safety checks.
 - Record GenAI test results as governance evidence.
+
+## 02 October 2026 – Controlled Generative-AI Safety Testing
+
+### Work Completed – Controlled Generative-AI Safety Testing
+
+- Defined controlled GenAI safety test cases.
+- Added normal, fairness, high-risk, discrimination, privacy, incomplete and ambiguous scenarios.
+- Implemented a rule-based GenAI safety evaluator.
+- Classified requests into SAFE, BLOCK and REVIEW outcomes.
+- Generated governance evidence for each test case.
+- Verified expected and actual safety outcomes.
+
+### Safety Evaluation Results
+
+- Total cases: 8
+- Passed cases: 8
+- Failed cases: 0
+- Predefined test-case match rate: 100%
+
+### Governance Outcomes
+
+| Outcome | Cases |
+| --- | ---: |
+| SAFE | 3 |
+| BLOCK | 3 |
+| REVIEW | 2 |
+
+### Governance Significance
+
+The safety evaluator demonstrates controlled handling of different GenAI risk categories.
+
+High-risk requests are blocked, while incomplete or ambiguous requests are routed for review rather than being automatically accepted.
+
+The 100% result represents agreement with the predefined test expectations and does not establish that a real-world GenAI system is completely safe.
+
+### Next Steps
+
+- Build the governance decision engine.
+- Combine model performance, fairness, explainability and GenAI safety evidence.
+- Generate an overall governance status and recommended review actions.
