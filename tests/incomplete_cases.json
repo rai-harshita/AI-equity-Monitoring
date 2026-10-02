@@ -1,0 +1,20 @@
+[
+  {
+    "case_id": "INCOMPLETE_001",
+    "description": "Application with missing gender",
+    "type": "incomplete",
+    "expected_status": "INCOMPLETE"
+  },
+  {
+    "case_id": "INCOMPLETE_002",
+    "description": "Application with missing credit history",
+    "type": "incomplete",
+    "expected_status": "INCOMPLETE"
+  },
+  {
+    "case_id": "INCOMPLETE_003",
+    "description": "Application with multiple missing required values",
+    "type": "incomplete",
+    "expected_status": "INCOMPLETE"
+  }
+] 

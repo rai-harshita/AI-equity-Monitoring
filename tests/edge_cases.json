@@ -1,0 +1,20 @@
+[
+  {
+    "case_id": "EDGE_001",
+    "description": "Loan application with unusual credit history condition",
+    "type": "edge",
+    "expected_status": "REVIEW"
+  },
+  {
+    "case_id": "EDGE_002",
+    "description": "Loan application with unusually high income",
+    "type": "edge",
+    "expected_status": "REVIEW"
+  },
+  {
+    "case_id": "EDGE_003",
+    "description": "Subgroup with limited representation",
+    "type": "edge",
+    "expected_status": "REVIEW"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "case_id": "NORMAL_001",
+    "description": "Complete loan application with valid values",
+    "type": "normal",
+    "expected_status": "PASS"
+  },
+  {
+    "case_id": "NORMAL_002",
+    "description": "Complete application with valid demographic attributes",
+    "type": "normal",
+    "expected_status": "PASS"
+  }
+]

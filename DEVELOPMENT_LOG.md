@@ -2,7 +2,7 @@
 
 ## 10 September 2026
 
-### Work Completed
+### Work Completed – Project Setup
 
 - Created GitHub repository for the project.
 - Created the local project folder and opened it in Visual Studio Code.
@@ -60,3 +60,38 @@
 - Define normal, edge and incomplete input cases.
 - Handle missing values for model training.
 - Prepare a baseline machine learning model.
+
+## 02 October 2026 – Data Validation and Test Cases
+
+### Work Completed – Data Validation and Test Cases
+
+- Implemented the initial dataset validation module.
+- Verified that all required dataset columns are present.
+- Checked for duplicate records.
+- Identified and reported missing values.
+- Validated the `Loan_Status` target values.
+- Created normal test cases.
+- Created edge test cases.
+- Created incomplete test cases.
+- Documented testing assumptions and acceptance criteria.
+
+### Validation Results
+
+- Dataset loaded successfully.
+- All required columns were present.
+- No duplicate rows were detected.
+- Missing values were identified and reported.
+- No invalid `Loan_Status` values were detected.
+
+### Governance Considerations
+
+- Missing demographic information should remain visible during evaluation.
+- Edge cases should be flagged for additional review.
+- Incomplete cases should not be treated as fully evaluated cases.
+- Small subgroup sizes may affect the reliability of fairness metrics.
+
+### Next Steps
+
+- Commit the validation and testing work to GitHub.
+- Prepare the baseline machine learning model.
+- Evaluate baseline model performance before adding fairness and explainability components.
