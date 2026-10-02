@@ -1,0 +1,47 @@
+{
+    "method": "SHAP",
+    "model": "Logistic Regression",
+    "test_samples": 123,
+    "top_features": [
+        {
+            "feature": "numeric__Credit_History",
+            "mean_absolute_shap": 1.0260819616575962
+        },
+        {
+            "feature": "categorical__Property_Area_Semiurban",
+            "mean_absolute_shap": 0.22434281283391663
+        },
+        {
+            "feature": "categorical__Property_Area_Rural",
+            "mean_absolute_shap": 0.14004189780168333
+        },
+        {
+            "feature": "categorical__Married_Yes",
+            "mean_absolute_shap": 0.11235368311727432
+        },
+        {
+            "feature": "categorical__Married_No",
+            "mean_absolute_shap": 0.11182739280597065
+        },
+        {
+            "feature": "categorical__Dependents_1",
+            "mean_absolute_shap": 0.10070154272984612
+        },
+        {
+            "feature": "numeric__CoapplicantIncome",
+            "mean_absolute_shap": 0.08028130843984081
+        },
+        {
+            "feature": "categorical__Dependents_2",
+            "mean_absolute_shap": 0.07099981779455063
+        },
+        {
+            "feature": "categorical__Property_Area_Urban",
+            "mean_absolute_shap": 0.06541069770462088
+        },
+        {
+            "feature": "categorical__Self_Employed_No",
+            "mean_absolute_shap": 0.024808898687539258
+        }
+    ]
+}

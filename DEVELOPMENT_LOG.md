@@ -187,3 +187,40 @@ The `Gender` and `Education` attributes are retained separately for subsequent s
 - Add an explainability component using SHAP.
 - Identify important model features.
 - Connect explanations with governance evidence.
+
+## 02 October 2026 – Explainable AI with SHAP
+
+### Work Completed
+
+- Implemented SHAP-based explainability for the baseline Logistic Regression model.
+- Generated SHAP values for the test dataset.
+- Calculated mean absolute SHAP values for model features.
+- Ranked features according to their average contribution magnitude.
+- Saved explainability results as JSON governance evidence.
+
+### Top Features by Mean Absolute SHAP Value
+
+| Feature | Mean Absolute SHAP |
+| --- | ---: |
+| Credit_History | 1.0261 |
+| Property_Area_Semiurban | 0.2243 |
+| Property_Area_Rural | 0.1400 |
+| Married_Yes | 0.1124 |
+| Married_No | 0.1118 |
+| Dependents_1 | 0.1007 |
+| CoapplicantIncome | 0.0803 |
+| Dependents_2 | 0.0710 |
+| Property_Area_Urban | 0.0654 |
+| Self_Employed_No | 0.0248 |
+
+### Explainability Governance Significance
+
+SHAP provides evidence about which model features have the greatest influence on predictions.
+
+Feature importance magnitude does not by itself establish causality or fairness. Explainability results should therefore be interpreted together with performance and subgroup fairness evidence.
+
+### Next Steps
+
+- Add controlled Generative-AI safety testing.
+- Define prompt-risk categories and safety checks.
+- Record GenAI test results as governance evidence.
