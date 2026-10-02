@@ -1,0 +1,35 @@
+{
+    "overall_status": "REVIEW",
+    "performance": {
+        "accuracy": 0.8618,
+        "precision": 0.84,
+        "recall": 0.9882,
+        "f1_score": 0.9081
+    },
+    "fairness": {
+        "Gender": {
+            "demographic_parity_difference": 0.1133,
+            "equalized_odds_difference": 0.0594,
+            "requires_review": true
+        },
+        "Education": {
+            "demographic_parity_difference": 0.0909,
+            "equalized_odds_difference": 0.1149,
+            "requires_review": true
+        }
+    },
+    "explainability": {
+        "available": true,
+        "top_features_count": 10
+    },
+    "genai_safety": {
+        "total_cases": 8,
+        "passed_cases": 8,
+        "failed_cases": 0,
+        "pass_rate": 1.0,
+        "requires_review": false
+    },
+    "governance_actions": [
+        "Review subgroup fairness metrics and investigate observed differences."
+    ]
+}

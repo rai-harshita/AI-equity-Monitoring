@@ -190,7 +190,7 @@ The `Gender` and `Education` attributes are retained separately for subsequent s
 
 ## 02 October 2026 – Explainable AI with SHAP
 
-### Work Completed
+### Governance Engine Work Completed
 
 - Implemented SHAP-based explainability for the baseline Logistic Regression model.
 - Generated SHAP values for the test dataset.
@@ -264,3 +264,50 @@ The 100% result represents agreement with the predefined test expectations and d
 - Build the governance decision engine.
 - Combine model performance, fairness, explainability and GenAI safety evidence.
 - Generate an overall governance status and recommended review actions.
+
+## 02 October 2026 – Governance Decision Engine
+
+### Work Completed
+
+- Implemented a transparent rule-based governance decision engine.
+- Combined baseline model performance evidence.
+- Combined Gender fairness evidence.
+- Combined Education fairness evidence.
+- Included SHAP explainability evidence.
+- Included GenAI safety evaluation evidence.
+- Generated an overall governance status.
+- Generated governance actions for conditions requiring additional review.
+- Saved the complete governance decision as JSON evidence.
+
+### Governance Decision
+
+- Overall status: REVIEW
+
+### Reason for Review
+
+The fairness evaluation identified subgroup metric differences that crossed the configured review conditions.
+
+The governance engine therefore routes the model for additional human review rather than automatically treating the model as deployment-ready.
+
+### Governance Evidence
+
+The decision incorporates:
+
+- Model performance metrics
+- Demographic parity difference
+- Equalized odds difference
+- Subgroup performance
+- SHAP feature importance
+- GenAI safety test results
+- Explicit governance actions
+
+### Governance Principle
+
+The governance engine is designed to support human oversight. A rule-based status provides traceable evidence for review rather than replacing human judgment.
+
+### Next Steps – Governance Dashboard
+
+- Build the Streamlit governance dashboard.
+- Display performance, fairness, explainability and GenAI safety evidence.
+- Display the governance status and review actions.
+- Add visualizations for subgroup comparisons and feature importance.
